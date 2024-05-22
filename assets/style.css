@@ -98,7 +98,7 @@ header.sticky ul li a {
 	z-index: 1; 
 }
 .banner h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	text-decoration: underline;
 	text-decoration-color: green;
 	color: black;
@@ -193,6 +193,9 @@ header.sticky ul li a {
 	gap: 5px;
 	align-items: center;
 	box-shadow: 1px 1px 10px;
+}
+.team .caption h3{
+	font-weight: bolder;
 }
 #product {
 	text-align: center;
@@ -317,6 +320,7 @@ footer .container div p {
 @media (max-width: 800px) {
 	.wave {
 		top: -170px;
+		height: 50px;
 	}
 }
 @media (max-width: 500px) {
@@ -411,9 +415,10 @@ footer .container div p {
 	}
 	.wave {
 		top: -80px;
+		height: 50px;
 	}
 	#about {
-		padding: 15px 35px;
+		padding: 0px 35px;
 	}
 	#about .about {
 		display: grid;
