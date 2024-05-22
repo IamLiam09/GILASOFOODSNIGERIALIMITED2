@@ -275,6 +275,11 @@ footer .container div p {
     color: white;
     font-size: 10px;
 }
+@media (max-width: 800px){
+    .wave{
+        top: -170px;
+    }
+}
 @media (max-width: 500px) {
 	header {
 		background-color: black;
