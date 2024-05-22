@@ -59,206 +59,238 @@ header.sticky .logo {
 header.sticky ul li a {
 	color: white;
 }
-.mobile{
-    display: none;
+.mobile {
+	display: none;
 }
-.banner{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(/assets/images/rice.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(/assets/images/rice.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
-.banner h1{
-    font-size: 3rem;
-    text-decoration: underline;
-    text-decoration-color: green;
-    color: white;
-    margin-bottom: 5px;
+.banner h1 {
+	font-size: 3rem;
+	text-decoration: underline;
+	text-decoration-color: green;
+	color: white;
+	margin-bottom: 5px;
 }
-.banner h4{
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 5px;
-    text-wrap: wrap;
-    text-align: center;
+.banner h4 {
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 5px;
+	text-wrap: wrap;
+	text-align: center;
 }
-.banner h3{
-    font-size: 1.4em;
-    color: white;
-    margin-bottom: 5px;
+.banner h3 {
+	font-size: 1.4em;
+	color: white;
+	margin-bottom: 5px;
 }
 
-.banner Button{
-    padding: 15px 30px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    background-color: rgb(9, 129, 9);
-    margin-top: 5px;
+.banner Button {
+	padding: 15px 30px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+	background-color: rgb(9, 129, 9);
+	margin-top: 5px;
 }
-.banner Button a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
+.banner Button a {
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
 }
-.wave{
-    position: relative;
-    top: -258px;
-    margin: 0;
-    padding: 0;
+.wave {
+	position: relative;
+	top: -258px;
+	margin: 0;
+	padding: 0;
 }
 #about {
- padding: 0px 100px;
- margin: 0;
+	padding: 0px 100px;
+	margin: 0;
 }
-#about .title{
-    text-align: center;
-   margin-bottom: 20px;
+#about .title {
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 #about .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 }
 
-.about .aboutus-image{
-    width: 100%;
-    height: 100%;
+.about .aboutus-image {
+	width: 100%;
+	height: 100%;
 }
 #about img {
-    max-width: 100%; 
-    height: auto; 
+	max-width: 100%;
+	height: auto;
 }
-#team{
+#team {
+	padding: 20px 100px;
+	text-align: center;
+}
+#team h2 {
+	margin: 15px;
+}
+.team {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+.team .caption {
+	width: 100%;
+	height: 200px;
+	border: 1px black;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 10px;
+}
+#product{
+    text-align: center;
+    font-size: 1rem;
     padding: 20px 100px;
-    text-align: center;
 }
-#team h2{
-    margin: 15px;
+#product .list {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	gap: 20px;
 }
-.team{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 20px; 
+#product .list li {
+	list-style: none;
 }
-.team .caption{
-    width: 100%;
-    height: 200px;
-    border: 1px black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px;
+.rice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: underline;
+	text-decoration-color: green;
+    font-size: 1rem;
+}
+.rice img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
 }
 
 @media (max-width: 500px) {
-    header{
-        background-color: black;
-        padding: 5px 30px;
-    }
-    header.sticky {
-        padding: 5px 30px;
-        background-color: black;
-    }
-    header.sticky ul li a {
-        color: black;
-    }
-    header .logo{
-        color: white;
-    }
-    header nav{
-        display: none;
-    }
-    .links {
-        background-color: white;
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        right: -600px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        transition: 0.6s ease;
-    }
-    .links.active {
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        color: black;
-    }
-    .links.active ul{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .mobile{
-        display: block
-    }
-    .mobile .ham-menu {
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        position: relative;
-        z-index: 3;
-        display: block;
-        transition: 0.6s ;
-    }
-    .mobile .ham-menu span {
-        height: 2px;
-        width: 100%;
-        background: white;
-        border-radius: 25px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: 0.6 ease;
-    }
-    .ham-menu span:nth-child(1) {
-        top: 25%;
-    }
-    .ham-menu span:nth-child(3) {
-        top: 75%;
-    }
-    .ham-menu.active span:nth-child(1){
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-        transition: 0.6s ;
-        background-color: black;
-    }
-    .ham-menu.active span:nth-child(2){
-        opacity: 0;
-    }
-    .ham-menu.active span:nth-child(3){
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
-        transition: 0.6s ;
-        background-color: black;
-    }
-    #about{
-        padding: 5px 35px;
-    }
-    #about .about {
+	header {
+		background-color: black;
+		padding: 5px 30px;
+	}
+	header.sticky {
+		padding: 5px 30px;
+		background-color: black;
+	}
+	header.sticky ul li a {
+		color: black;
+	}
+	header .logo {
+		color: white;
+	}
+	header nav {
+		display: none;
+	}
+	.links {
+		background-color: white;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		right: -600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2rem;
+		transition: 0.6s ease;
+	}
+	.links.active {
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		color: black;
+	}
+	.links.active ul {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.mobile {
+		display: block;
+	}
+	.mobile .ham-menu {
+		height: 50px;
+		width: 50px;
+		margin-left: auto;
+		position: relative;
+		z-index: 3;
+		display: block;
+		transition: 0.6s;
+	}
+	.mobile .ham-menu span {
+		height: 2px;
+		width: 100%;
+		background: white;
+		border-radius: 25px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: 0.6 ease;
+	}
+	.ham-menu span:nth-child(1) {
+		top: 25%;
+	}
+	.ham-menu span:nth-child(3) {
+		top: 75%;
+	}
+	.ham-menu.active span:nth-child(1) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		transition: 0.6s;
+		background-color: black;
+	}
+	.ham-menu.active span:nth-child(2) {
+		opacity: 0;
+	}
+	.ham-menu.active span:nth-child(3) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+		transition: 0.6s;
+		background-color: black;
+	}
+	#about {
+		padding: 5px 35px;
+	}
+	#about .about {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	.team {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+    #product .list{
         display: grid;
-        grid-template-columns: 1fr; 
-        gap: 20px; 
-    }
-    .team{
-        display: grid;
-        grid-template-columns: 1fr; 
-        gap: 20px; 
+		grid-template-columns: 1fr;
+		gap: 20px;
     }
 }
