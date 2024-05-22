@@ -161,10 +161,10 @@ header.sticky ul li a {
 	align-items: center;
 	box-shadow: 1px 1px 10px;
 }
-#product{
-    text-align: center;
-    font-size: 1rem;
-    padding: 20px 100px;
+#product {
+	text-align: center;
+	font-size: 1rem;
+	padding: 20px 100px;
 }
 #product .list {
 	display: grid;
@@ -181,14 +181,50 @@ header.sticky ul li a {
 	flex-direction: column;
 	text-decoration: underline;
 	text-decoration-color: green;
-    font-size: 1rem;
+	font-size: 1rem;
 }
 .rice img {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
 }
-
+footer {
+	padding: 10px 100px;
+	background-color: black;
+}
+footer .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+footer .container h1 {
+	color: white;
+}
+footer .container div h4 {
+	font-size: 1rem;
+	color: white;
+	padding: 10px;
+}
+footer .container div span {
+	text-decoration: underline;
+}
+footer .container div p {
+	color: white;
+	padding: 2px 10px;
+}
+.social-list {
+	display: flex;
+	gap: 5px;
+}
+.social-list li{
+    list-style: none;
+}
+.social-link {
+	background-color: white;
+	color: white;
+	font-size: 1.5rem;
+	padding: 10px;
+	transition: 0.6s;
+}
 @media (max-width: 500px) {
 	header {
 		background-color: black;
@@ -288,12 +324,12 @@ header.sticky ul li a {
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
-    #product{
-        padding: 5px 0px;
-    }
-    #product .list{
-        display: grid;
+	#product {
+		padding: 5px 0px;
+	}
+	#product .list {
+		display: grid;
 		grid-template-columns: 1fr;
 		gap: 20px;
-    }
+	}
 }
