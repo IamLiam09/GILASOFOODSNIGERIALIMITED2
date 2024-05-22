@@ -146,18 +146,19 @@ header.sticky ul li a {
 #about .title {
 	text-align: center;
 	margin-bottom: 20px;
+	text-transform: capitalize;
 }
 
 #about .about {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 20px;
+	font: 1rem;
 }
 .about p .point{
 	text-align: center;
 	font-weight: 700;
-	padding: 5px;
-
+	padding: 20px 0;
 }
 
 .about .aboutus-image {
@@ -212,7 +213,7 @@ header.sticky ul li a {
 .rice img {
 	width: 250px;
 	height: 250px;
-	border-radius: 50%;
+	border-radius: 20%;
 }
 #contact {
 	display: flex;
@@ -229,7 +230,7 @@ form {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	width: 50%;
+	width: 70%;
 }
 input {
 	width: 100%;
@@ -238,6 +239,7 @@ textarea {
 	width: 100%;
 	height: 150px;
 	resize: vertical;
+	padding: 10px;
 }
 input,
 button {
