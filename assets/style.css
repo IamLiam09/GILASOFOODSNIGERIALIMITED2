@@ -153,8 +153,10 @@ header.sticky ul li a {
 	grid-template-columns: 1fr;
 	gap: 20px;
 }
-.about span{
+.about p .point{
 	text-align: center;
+	font-weight: 700;
+	padding: 5px;
 
 }
 
