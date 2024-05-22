@@ -288,6 +288,9 @@ header.sticky ul li a {
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
+    #product{
+        padding: 5px 0px;
+    }
     #product .list{
         display: grid;
 		grid-template-columns: 1fr;
