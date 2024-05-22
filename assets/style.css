@@ -118,7 +118,6 @@ header.sticky ul li a {
 #about {
 	padding: 0px 100px;
 	margin: 0;
-    height: 100vh;
 }
 #about .title {
 	text-align: center;
@@ -166,7 +165,6 @@ header.sticky ul li a {
 	text-align: center;
 	font-size: 1rem;
 	padding: 20px 100px;
-    height: 100vh;
 }
 #product .list {
 	display: grid;
@@ -363,6 +361,9 @@ footer .container div p {
 		transition: 0.6s;
 		background-color: black;
 	}
+    .wave{
+        top: -80px;
+    }
 	#about {
 		padding: 5px 35px;
 	}
