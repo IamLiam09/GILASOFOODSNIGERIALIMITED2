@@ -390,6 +390,9 @@ footer .container div p {
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
+	footer{
+		padding: 10px 20px;
+	}
     footer .container{
         display: grid;
         grid-template-columns: 1fr;
