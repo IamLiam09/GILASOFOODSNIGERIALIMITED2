@@ -281,6 +281,17 @@ footer .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
+footer .container .logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .container .logo h1{
+	font-size: 0.8rem;
+}
+footer .container .logo img{
+	width: 50px;
+}
 footer .container h1 {
 	color: white;
 }
@@ -450,5 +461,8 @@ footer .container div p {
 	footer .container {
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+	footer .container .logo{
+		justify-content: flex-start;
 	}
 }
