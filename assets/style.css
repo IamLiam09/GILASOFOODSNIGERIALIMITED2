@@ -327,6 +327,15 @@ footer .container div p {
 	color: white;
 	font-size: 10px;
 }
+.hidden{
+	opacity: 0;
+	filter: blur(5px);
+	transition: all 1s;
+}
+.show{
+	opacity: 1;
+	filter: blur(0px);
+}
 @media (max-width: 800px) {
 	.wave {
 		top: -170px;
@@ -337,6 +346,9 @@ footer .container div p {
 	header {
 		background-color: black;
 		padding: 5px 30px;
+	}
+	header ul li a {
+		color: black;
 	}
 	header.sticky {
 		padding: 5px 30px;
