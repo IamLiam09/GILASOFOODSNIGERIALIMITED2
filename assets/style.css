@@ -68,7 +68,7 @@ header.sticky ul li a {
 .mobile {
 	display: none;
 }
-.popup {
+.temp {
 	position: absolute;
 	transform: translate(-50%, 50%);
 	left: 50%;
@@ -76,7 +76,7 @@ header.sticky ul li a {
 	z-index: 10;
 	display: none;
 }
-.popup button {
+.temp button {
 	display: block;
 	margin: 0 0 20px auto;
 	width: 0;
@@ -365,15 +365,15 @@ footer .container div p {
 		top: -170px;
 		height: 50px;
 	}
-	.popup {
+	.temp {
 		width: 90%;
 		height: 90%;
 	}
-	.popup img {
+	.temp img {
 		object-fit: contain;
 		width: 100%;
 	}
-	.popup button {
+	.temp button {
 		top: -4%;
 	}
 }
@@ -402,7 +402,7 @@ footer .container div p {
 	header nav {
 		display: none;
 	}
-	.popup {
+	.temp {
 		height: 90%;
 		width: 90%;
 		position: absolute;
@@ -411,7 +411,7 @@ footer .container div p {
 		z-index: 10;
 		display: none;
 	}
-	.popup button{
+	.temp button {
 		font-size: 30px;
 	}
 	.links {
