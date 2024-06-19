@@ -30,7 +30,7 @@ header .logo {
 	letter-spacing: 2px;
 	transition: 0.6;
 }
-header .logo img{
+header .logo img {
 	width: 100px;
 }
 header ul {
@@ -59,7 +59,7 @@ header.sticky {
 header.sticky .logo {
 	color: white;
 }
-header.sticky .logo img{
+header.sticky .logo img {
 	width: 50px;
 }
 header.sticky ul li a {
@@ -67,6 +67,30 @@ header.sticky ul li a {
 }
 .mobile {
 	display: none;
+}
+.popup {
+	position: absolute;
+	transform: translate(-50%, 50%);
+	left: 50%;
+	bottom: -50%;
+	z-index: 10;
+	display: none;
+}
+.popup button {
+	display: block;
+	margin: 0 0 20px auto;
+	width: 0;
+	height: 0;
+	padding: 0;
+	background-color: blue;
+	font-size: 50px;
+	border: none;
+	color: black;
+	outline: none;
+	cursor: pointer;
+	position: absolute;
+	right: 7%;
+	z-index: 20;
 }
 .banner {
 	position: relative;
@@ -77,7 +101,7 @@ header.sticky ul li a {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	overflow: hidden; 
+	overflow: hidden;
 }
 
 .banner::before {
@@ -90,12 +114,12 @@ header.sticky ul li a {
 	background: url(/assets/images/about.jpg);
 	background-size: cover;
 	filter: blur(3px);
-	z-index: -1; 
+	z-index: -1;
 }
 
 .banner .content {
 	position: relative;
-	z-index: 1; 
+	z-index: 1;
 }
 .banner h1 {
 	font-size: 2rem;
@@ -156,7 +180,7 @@ header.sticky ul li a {
 	gap: 20px;
 	font: 1rem;
 }
-.about .point{
+.about .point {
 	font-weight: 700;
 	margin-top: 10px !important;
 }
@@ -177,7 +201,7 @@ header.sticky ul li a {
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
 }
-#team h2{
+#team h2 {
 	color: red;
 }
 .team .caption {
@@ -193,7 +217,7 @@ header.sticky ul li a {
 	align-items: center;
 	box-shadow: 1px 1px 10px;
 }
-.team .caption h3{
+.team .caption h3 {
 	font-weight: bolder;
 }
 #product {
@@ -201,7 +225,7 @@ header.sticky ul li a {
 	font-size: 1rem;
 	padding: 40px 100px;
 }
-#product h1{
+#product h1 {
 	color: red;
 }
 #product .list {
@@ -280,15 +304,15 @@ footer .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-footer .container .logo{
+footer .container .logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-footer .container .logo h1{
+footer .container .logo h1 {
 	font-size: 0.8rem;
 }
-footer .container .logo img{
+footer .container .logo img {
 	width: 50px;
 }
 footer .container h1 {
@@ -327,12 +351,12 @@ footer .container div p {
 	color: white;
 	font-size: 10px;
 }
-.hidden{
+.hidden {
 	opacity: 0;
 	filter: blur(5px);
 	transition: all 1s;
 }
-.show{
+.show {
 	opacity: 1;
 	filter: blur(0px);
 }
@@ -340,6 +364,17 @@ footer .container div p {
 	.wave {
 		top: -170px;
 		height: 50px;
+	}
+	.popup {
+		width: 90%;
+		height: 90%;
+	}
+	.popup img {
+		object-fit: contain;
+		width: 100%;
+	}
+	.popup button {
+		top: -4%;
 	}
 }
 @media (max-width: 500px) {
@@ -361,11 +396,23 @@ footer .container div p {
 		color: white;
 		font-size: 1rem;
 	}
-	header .logo img{
+	header .logo img {
 		width: 50px;
 	}
 	header nav {
 		display: none;
+	}
+	.popup {
+		height: 90%;
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		bottom: -250%;
+		z-index: 10;
+		display: none;
+	}
+	.popup button{
+		font-size: 30px;
 	}
 	.links {
 		background-color: white;
@@ -447,7 +494,7 @@ footer .container div p {
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
-	#team{
+	#team {
 		padding: 20px 30px;
 	}
 	.team {
@@ -473,7 +520,7 @@ footer .container div p {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
-	footer .container .logo{
+	footer .container .logo {
 		justify-content: flex-start;
 	}
 }
